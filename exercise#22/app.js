@@ -1,6 +1,10 @@
-const colors = ["red", "green", "blue"];
+const car = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020;
+};
 
-const [first, , second ,third] = colors;
+const { make, model } = car;
 
-console.log(first);
-console.log(second);
+console.log(make);
+console.log(model);
