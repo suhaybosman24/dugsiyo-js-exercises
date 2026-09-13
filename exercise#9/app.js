@@ -4,10 +4,9 @@ let car = {
     year: 2025,
 
     start: function () {
-        console.log("The car has started");
+        console.log("The car has started ");
     }
 };
 
-// car.start();
+car.start();
 
-console.log(car.start())
