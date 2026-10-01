@@ -1,15 +1,31 @@
-// // defaul parameters
+// // spread operators
 
-// function greet(name="guest"){
-//     console.log(`hello ${name}`)
+// const numbers=[1,2,3,4,5];
+// const newNumbers=[...numbers,7,8,9,10];
+// console.log(newNumbers)
+
+// // rest operators
+// function sum(...numbers){
+//     return numbers.reduce((total ,numb)=>total+numb,0)
 // }
-// greet("osman");
 
+// // console.log(sum([20]));
 
-function calculateArea(width = 5, height =width) {
-    console.log(`widht is ${width} and height is ${height}`);
+// console.log(sum(20,30,50));
+
+// exercise#25
+// spread operators
+
+const numbers=[1,2,3];
+const newNumbers=[...numbers,4,5,6];
+console.log(newNumbers)
+
+// rest operators
+
+function multiply(...numbers){
+    return numbers.reduce((total,numb)=>total *numb,1)
 }
 
-calculateArea(5);
+// console.log(multiply([20,10]));
 
-
+console.log(multiply(20,10));
