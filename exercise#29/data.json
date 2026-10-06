@@ -1,0 +1,27 @@
+{
+    "id":1,
+    "name":"osman",
+    "orders" : [
+        { "orderId":1, "product":"kyboard", "item":3},
+          { "orderId":2, "product":"mouse ", "item":30}
+       
+    ]
+},
+{
+    "id":2,
+    "name":"farah",
+    "orders" : [
+        { "orderId":1, "product":"lamba", "item":1},
+          { "orderId":2, "product":"t-shirt ", "item":343}
+       
+    ]
+},
+{
+    "id":3,
+    "name":"ahmet",
+    "orders" : [
+        { "orderId":1, "product":"charger", "item":5},
+          { "orderId":2, "product":"pencil ", "item":4}
+       
+    ]
+},
