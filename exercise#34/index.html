@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #headers{
+            background-color: red;
+            margin: 10px;
+            /* padding-left: 300px; */
+            /* padding: 20px; */
+            padding: 10px;
+            padding-left: 300px;
+        }
+        .paragraph{
+            background-color: yellow;
+            font-size: 15px;
+            font-style: italic;
+        }
+        button{
+            background-color: blueviolet;
+            margin-left: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="headers">My Items</h1>
+
+    <ul id="lists">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    
+<button onclick="addNew()">add elements</button>
+<button onclick="removeElements()">remove elements</button>
+
+    
+<script>
+   
+
+const list=document.querySelector('#lists');
+
+function addNew(){
+    const newone= document.createElement('li');
+    newone.textContent=('item 4');
+
+    list.appendChild(newone);
+}
+
+function removeElements(){
+
+
+    if(list.lastChild){
+         list.removeChild(list.lastChild)
+    }else{
+        alert("Now! there isnot items here");
+    }
+   
+}
+
+
+     
+</script>
+</body>
+</html>
