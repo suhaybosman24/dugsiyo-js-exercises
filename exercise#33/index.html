@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #headers{
+            background-color: red;
+            margin: 10px;
+            /* padding-left: 300px; */
+            /* padding: 20px; */
+            padding: 10px;
+            padding-left: 300px;
+        }
+        .paragraph{
+            background-color: yellow;
+            font-size: 15px;
+            font-style: italic;
+        }
+        button{
+            background-color: blueviolet;
+            margin-left: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="headers">ABOUT ME</h1>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta autem quaerat fugit officia quos eos reiciendis dolorem expedita commodi?</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rerum!</p>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeElements()">Change Elements</button>
+
+    <script>
+
+        const head=document.querySelector('#headers');
+        const paragraph=document.querySelector('.paragraph');
+
+        function changeText(){
+          headers.textContent="Welcome to my DOM"; 
+        }
+
+        function changeElements(){
+            paragraph.innerHTML="This is my new document object manipulation";
+        }
+   
+
+        
+    </script>
+</body>
+</html>
